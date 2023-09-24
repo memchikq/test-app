@@ -3,6 +3,7 @@
 import { useAppDispatch, useAppSelector } from "@/redux/hooks/redux"
 import { fetchData } from "@/redux/reduxThunk/fetchData"
 import { setPage } from "@/redux/slices/articlesSlice"
+import Link from "next/link"
 import {useEffect} from 'react'
 const CartList = () =>{
     const {data,isLoaded,page,pageSize,query,orderBy,error} = useAppSelector(state => state.articles)
@@ -39,7 +40,7 @@ const CartList = () =>{
                 <div className="p-3 flex flex-col">
                     <time>{new Date(v.webPublicationDate).toDateString()}</time>
                     <b>{v.webTitle}</b>
-                    <a className="text-right text-red-200 cursor-pointer ">Детали</a>
+                    <Link href={`/article/${v.id}`} className="text-right text-red-200 cursor-pointer ">Детали</Link>
                 </div>
             </div>
         ))}
