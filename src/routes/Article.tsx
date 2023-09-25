@@ -1,5 +1,9 @@
+
 import Link from "next/link"
 import "./article.css"
+
+
+
 interface Content {
   id: string
   type: string
@@ -18,7 +22,7 @@ interface Content {
 const Article = ({content}:{content:Content}) => {
   return (
     <>
-    <Link className="top-2 left-2 fixed" href="/">Назад</Link>
+    <Link className="top-2 left-2 fixed hidden md:block"  href="/">Назад</Link>
     <main className="min-w-full min-h-screen flex justify-center items-center my-3">
       <div className="p-5 bg-slate-700 mx-5 w-full h-auto md:w-2/3">
         <h1 className="text-center break-words text-lg mb-4">

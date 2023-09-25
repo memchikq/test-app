@@ -14,7 +14,8 @@ const Search = () =>{
   }
 
     return (
-        <div className='max-w-md bg-gray-600 p-3 flex flex-col justify-between gap-2'>
+        <div className='max-w-md bg-gray-600 p-3 flex flex-col items-center justify-between gap-2'>
+        
         <div className='flex justify-between gap-2'>
           <input value={query} onChange={(e:React.ChangeEvent<HTMLInputElement>)=>dipatcher(setQuery(e.target.value))} className='bg-gray-500' />
           <button onClick={fetchArticles} className='bg-green-600 p-2'>Поиск</button>

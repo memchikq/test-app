@@ -1,4 +1,4 @@
-import Article from "@/route/Article"
+import Article from "@/routes/Article"
 import axios from "axios"
 
 interface PageProps{

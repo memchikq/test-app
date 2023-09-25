@@ -2,6 +2,7 @@
     float: left;
     width: 60%;
     height: 60%;
+    margin-bottom: 12px;
     margin-right: 12px;
 }
 
@@ -14,7 +15,7 @@
 .article blockquote{
     float: left;
     width: 220px;
-    color: goldenrod;
+    color: rgb(206, 23, 23);
 }
 .article blockquote::before{
     content: "“";

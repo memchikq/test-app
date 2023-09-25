@@ -1,4 +1,4 @@
-import Main from "@/route/Main"
+import Main from "@/routes/Main"
 export default function Home() {
   return <Main />
 }
